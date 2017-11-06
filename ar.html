@@ -4,7 +4,8 @@
     <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
   </head>
   <body>
-    <a-scene>
+    <a-scene embedded arjs>
+      <a-marker-camera preset='hiro'></a-marker-camera>
       <a-collada-model src="drone.dae" position="0 2 -5" rotation="15 0 0">
         <a-animation attribute="rotation"
                  dur="10000"
